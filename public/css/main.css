@@ -1,0 +1,45 @@
+body {
+  color: aliceblue;
+  text-align: justify;
+}
+
+.post {
+  padding: 1rem 3rem;
+  color: aliceblue;
+  display: grid;
+  place-items: center;
+}
+
+.journal-title {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.journal-title:hover {
+  text-decoration: none;
+  color: rgb(204, 231, 255);
+}
+
+input {
+  background-color: transparent;
+  color: aliceblue;
+  border: 1px solid white;
+  display: block;
+}
+
+textarea {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  background-color: transparent;
+  color: aliceblue;
+  border: 1px solid white;
+  display: block;
+}
+
+.section {
+  padding: 1rem 3rem;
+}
+
+::placeholder {
+  color: antiquewhite;
+}

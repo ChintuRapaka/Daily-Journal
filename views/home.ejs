@@ -1,0 +1,13 @@
+<%- include("partials/header") -%>
+<% journals.forEach((journal) => { %>
+<h2><a class="journal-title" href="/posts/<%= journal.id %>"><%= journal.title %></a></h2>
+<% if(journal.content.length > 100) {%>
+<p class="journal-content"><%= journal.content.substring(0, 100) %> ...<span><i
+            style="color: lightgoldenrodyellow;">(click on title to read more)</i></span>
+</p>
+<% } else { %>
+<p class="journal-content"><%= journal.content %></p>
+<% } %>
+<hr color="white" width="100%">
+<% }) %>
+<%- include("partials/footer") -%>
